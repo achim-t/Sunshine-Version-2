@@ -139,7 +139,7 @@ public class ForecastFragment extends Fragment implements LoaderManager.LoaderCa
                 locationSetting, System.currentTimeMillis());
         return new CursorLoader(getActivity(),
                 weatherForLocationUri,
-                null,
+                FORECAST_COLUMNS,
                 null,
                 null,
                 sortOrder);
